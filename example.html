@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+	<!--   CSS Part start here  -->
+	  <style>
+		.myDiv 
+		{
+		  border: 5px outset red;
+		  background-color: lightblue;
+		  text-align: center;
+		  font-size: small;
+		}
+		
+	 </style>
+	<!--   CSS Part end here  -->
+	</head>
+
+	<!--   HTML Part start here  -->
+	<body>
+
+	<p id='p_name'></p>
+
+	<!-- Script Part Start -->
+		<!-- src="asset/js/my_javascript.js" -->
+		<script type="text/javascript" >
+			document.write("Hello World from JavaScript!<br>");
+			var your_name = "Meher";
+			var age = 20;
+			document.getElementById("p_name").innerHTML= "Hello "+ your_name + "<br>Age : " + age;
+			//alert("hi");
+
+			//alert(document.getElementById("p_name"));
+
+			// prompt
+			//var x = prompt("enter a number");
+			//document.write("2 * ", x, " = ", 2*x + "<br>");
+
+			// function
+			function add2Num(num1, num2)
+			{ // function definition
+				//alert('add2Num');
+				return num1 + num2;
+			}
+			sum = add2Num(20, 30); // function call
+			document.write("Addition = " + sum);
+			document.write("<br>");
+
+			function clickevent()
+			{
+				//alert('gg');
+				//console.log('welcome');
+				console.log(document.getElementById("one") );  
+
+				console.log(document.getElementById("myInput").value);
+			}
+
+			function mouseoverevent()  
+			{  
+				//alert("This is JavaTpoint");  
+			}  
+
+			function checkCheckbox()
+			{
+				//alert('dddddd');
+				console.log('checkCheckbox');
+				console.log(document.getElementById("myCheck1"));
+				console.log(document.getElementById("myCheck1").value);
+
+			}
+		</script>
+	<!-- Script Part End -->
+ 
+	<form>  
+		<input id="one" type="button" onclick="clickevent()" value="Click Here"/>  <br>
+		<input type="text" placeholder="Type something..." id="myInput">
+		<p onmouseover="mouseoverevent()"> Keep cursor over me</p>  
+
+		<h3> Are you a web developer? </h3>  
+		Yes: <input type="checkbox" id="myCheck1" value="Yes, I'm a web developer">  
+		No:  <input type="checkbox" id="myCheck2" value="No, I'm not a web developer">  
+		<br> <br>  
+		<button id="test" onclick="checkCheckbox()" value="test_data">Submit Here</button> <br>  
+	</form>  
+
+  <img src="D://temp//test.png">
+
+  <div class="myDiv">
+	  <h2>This is a heading in a div element</h2>
+	  <p>This is some text in a div element.</p>
+  </div>
+
+  <br>
+	  <table>
+	  <colgroup>
+		<col span="3" style="background-color:red">
+		<col style="background-color:yellow">
+	  </colgroup>
+	  <tr>
+		<th>ISBN</th>
+		<th>Title</th>
+		<th>Price</th>
+		<th>Acc</th>
+		<th>No</th>
+	  </tr>
+	  <tr>
+		<td>3476896</td>
+		<td>My first HTML</td>
+		<td>$53</td>
+		<td>1233333</td>
+		<td>555</td>
+	  </tr>
+	</table>
+
+ </body>
+ <!--   HTML Part start here  -->
+</html> 
+
